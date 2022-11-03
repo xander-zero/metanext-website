@@ -34,7 +34,7 @@ export default function Home() {
       <Management />
       <Security />
       {/* <Content /> */}
-      <Intro />
+      {/* <Intro /> */}
       {/* <Comment /> */}
       {/* <Suspense fallback={<p>Loading...</p>}>
         <DaynamicComment />
