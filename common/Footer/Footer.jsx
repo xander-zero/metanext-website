@@ -114,8 +114,10 @@ const Footer = () => {
                     size="13px"
                     en={router.locale === "en" ? "en" : ""}
                   >
-                    {router.locale === "en" && "+"}98-9352163631
-                    {router.locale === "fa" && "+"}
+                    <a href="tel:+98-9352163631">
+                      {router.locale === "en" && "+"}98-9352163631
+                      {router.locale === "fa" && "+"}
+                    </a>
                   </Typography>
                 </div>
               </WrapperIcon>
