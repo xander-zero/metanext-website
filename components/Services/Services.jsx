@@ -17,7 +17,7 @@ const Services = () => {
       <ServiceStyle>
         <WrapperTitle>
           <Image src={point} alt="point" layout="fixed" />
-          <Typography color="#053EFF" weight="bold" size="24px">
+          <Typography color="#09539f" weight="bold" size="24px">
             {languageData.title_service}
           </Typography>
         </WrapperTitle>

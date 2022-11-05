@@ -5,7 +5,7 @@ const Card = ({ title, desc }) => {
   return (
     <CardWrapper>
       <CardTitle>
-        <Typography size="14px" weight="bold" color="#053EFF">
+        <Typography size="14px" weight="bold" color="#09539f">
           {title}
         </Typography>
       </CardTitle>

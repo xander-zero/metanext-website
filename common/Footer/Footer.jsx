@@ -93,7 +93,7 @@ const Footer = () => {
           </SocilaMedia> */}
         </Right>
         <Left>
-          <Typography size="16px" color="#053EFF" weight="bold">
+          <Typography size="16px" color="#09539f" weight="bold">
             {languageData.contact_subTitle}
           </Typography>
           <List>
@@ -129,7 +129,7 @@ const Footer = () => {
               <WrapperIcon>
                 <Image src={location} alt="phone number" layout="fixed" />
                 <div className="mx-2">
-                  <Typography size="13px">
+                  <Typography size="13px" color="#09539f">
                     {languageData.address_company_desc}
                   </Typography>
                 </div>
@@ -142,7 +142,9 @@ const Footer = () => {
               <WrapperIcon>
                 <Image src={email} alt="phone number" layout="fixed" />
                 <div className="mx-2">
-                  <Typography size="13px">info@metanext.biz</Typography>
+                  <Typography size="13px" color="#09539f">
+                    info@metanext.biz
+                  </Typography>
                 </div>
               </WrapperIcon>
             </ListItem>

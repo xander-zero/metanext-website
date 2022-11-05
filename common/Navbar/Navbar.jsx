@@ -221,7 +221,7 @@ const Navbar = () => {
                       size="13px"
                       radius="true"
                       bgColor="#fff"
-                      color="#053EFF"
+                      color="#09539f"
                     >
                       <Link href="/login">
                         {languageData.login_label_button
@@ -277,11 +277,13 @@ const Navbar = () => {
               </Dropdown>
               <div className="mx-2"></div>
               <div className="mx-2">
-                <Button radius="true" bgColor="#fff" color="#053EFF">
+                <Button radius="true" bgColor="#fff" color="#09539f">
                   <Link href="/login">
-                    {languageData.login_label_button
-                      ? languageData.login_label_button
-                      : ""}
+                    <>
+                      {languageData.login_label_button
+                        ? languageData.login_label_button
+                        : ""}
+                    </>
                   </Link>
                 </Button>
               </div>

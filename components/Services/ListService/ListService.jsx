@@ -12,15 +12,9 @@ import shop from "../../../public/assets/images/shop.png";
 import chat from "../../../public/assets/images/chat.png";
 import Carousel from "react-elastic-carousel";
 
-import { useState } from "react";
-
 const ListService = ({ languageData }) => {
   const { width } = useWindowSize();
-  const [colors, setColors] = useState({
-    gray: "#053EFF",
-    blue: "#AFB7CA",
-    status: false,
-  });
+
   const services = [
     {
       id: "1",

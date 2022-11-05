@@ -25,7 +25,7 @@ const ServiceCard = ({ title, src, desc, color, name }) => {
   const { languageData } = languageSelector;
 
   const [colors, setColors] = useState({
-    gray: "#053EFF",
+    gray: "#09539f",
     blue: "#AFB7CA",
     status: false,
   });
@@ -36,7 +36,7 @@ const ServiceCard = ({ title, src, desc, color, name }) => {
           setColors({ gray: "#FFBA08", blue: "#FFBA08", status: true })
         }
         onMouseLeave={() =>
-          setColors({ gray: "#AFB7CA", blue: "#053EFF", status: false })
+          setColors({ gray: "#AFB7CA", blue: "#09539f", status: false })
         }
       >
         <div className="card-wrapper">
@@ -78,7 +78,7 @@ const ServiceCard = ({ title, src, desc, color, name }) => {
 
             <div className="mx-3 free-learn">
               <Typography
-                color={color ? color : "#053EFF"}
+                color={color ? color : "#09539f"}
                 // color="#053EFF"
                 size="12px"
                 weight="bold"
@@ -89,7 +89,7 @@ const ServiceCard = ({ title, src, desc, color, name }) => {
           </div>
           <div
             className="line"
-            style={{ backgroundColor: color ? color : "#053eff" }}
+            style={{ backgroundColor: color ? color : "#09539f" }}
           ></div>
         </div>
       </Card>

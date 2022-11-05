@@ -10,7 +10,7 @@ const HeaderTitle = ({ size, color, children, weight, en }) => {
 
 const Text = styled.h1`
   font-size: ${({ size }) => size};
-  color: ${({ color }) => (color ? color : "#053EFF")};
+  color: ${({ color }) => (color ? color : "#09539f")};
   font-weight: bold;
   font-family: ${({ en }) => (en ? "sans-serif" : "")};
   @media (max-width: 768px) {

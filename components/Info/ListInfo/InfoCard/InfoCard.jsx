@@ -18,7 +18,7 @@ const InfoCard = ({ src, title, desc }) => {
           en={locale === "en" ? "en" : ""}
           size="24px"
           weight="bold"
-          color="#053EFF"
+          color="#09539f"
         >
           {/* <CountUp duration={1} start={0} end={+title} /> */}
           <CountUp
