@@ -24,7 +24,7 @@
     "react-dom": "18.2.0",
     "react-elastic-carousel": "^0.11.5",
     "react-flagkit": "^2.0.4",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.6.0",
     "react-redux": "^8.0.2",
     "react-slideshow-image": "^4.0.2",
     "react-toastify": "^9.0.5",

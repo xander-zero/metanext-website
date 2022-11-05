@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
 import {
   ListItem,
   LogoStyle,
@@ -13,12 +12,10 @@ import {
   WrapperButton,
   WrapperLogo,
 } from "./navbarStyle";
-import Select from "../Select/Select";
 import Button from "../Button/Button";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import useWindowSize from "../../hook/useViewPort";
-import timebar from "../../public/assets/images/timebar.png";
 import close from "../../public/assets/images/close.png";
 import logo from "../../public/assets/images/logo.png";
 import iran from "../../public/assets/images/iran.png";
@@ -26,36 +23,16 @@ import iraq from "../../public/assets/images/iraq.png";
 import kingdom from "../../public/assets/images/kingdom.png";
 import { handleScroll } from "../../helper/smoothScroll";
 import Dropdown from "react-bootstrap/Dropdown";
+import { HiMenuAlt1 } from "react-icons/hi";
+
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(true);
   const [flag, setFlag] = useState(iran);
-  const languages = [
-    {
-      id: "1",
-      label: "ایران",
-      value: "fa",
-    },
-    {
-      id: "2",
-      label: "انگلیسی",
-      value: "en",
-    },
-    {
-      id: "3",
-      label: "عربی",
-      value: "ar",
-    },
-  ];
 
   const router = useRouter();
   const type = router.locale;
 
   const { width } = useWindowSize();
-
-  const onChange = (event) => {
-    const lng = event.target.value;
-    router.push("/", "/", { locale: lng });
-  };
 
   const languageSelector = useSelector((state) => state.language);
 
@@ -120,12 +97,12 @@ const Navbar = () => {
                 }}
               >
                 {width <= 1022 ? null : (
-                  <Image
-                    src={timebar}
-                    alt="timebar"
-                    layout="fixed"
+                  <div
+                    className="mx-2"
                     onClick={() => setShowSidebar(!showSidebar)}
-                  />
+                  >
+                    <HiMenuAlt1 color="#09539f" size={20} />
+                  </div>
                 )}
                 {/* <Link href="#"> */}
                 {languageData.menu_item_about
@@ -235,12 +212,9 @@ const Navbar = () => {
             ) : null}
           </WrapperLogo>
           {width <= 1022 ? (
-            <Image
-              src={timebar}
-              alt="timebar"
-              layout="fixed"
-              onClick={() => setShowSidebar(!showSidebar)}
-            />
+            <div className="mx-2" onClick={() => setShowSidebar(!showSidebar)}>
+              <HiMenuAlt1 color="#09539f" size={20} />
+            </div>
           ) : (
             <WrapperButton>
               {/* <Select items={languages} onChange={onChange} value={type} /> */}

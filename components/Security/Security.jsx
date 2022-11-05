@@ -8,7 +8,7 @@ import Typography from "../../common/Typography/Typography";
 import SecurityList from "./SecurityList/SecurityList";
 
 import cardSecurity from "../../public/assets/images/cardSecurity.png";
-import securityImg from "../../public/assets/images/sec.png";
+import securityImg from "../../public/assets/images/sec.jpg";
 import point from "../../public/assets/images/point-white.png";
 
 const Security = () => {
@@ -38,7 +38,7 @@ const Security = () => {
             <SecurityList languageData={languageData} />
           </Right>
           <Left>
-            <Image src={cardSecurity} alt="cardSecurity" layout="fixed" />
+            <Image src={cardSecurity} alt="cardSecurity" layout="intrinsic" />
           </Left>
         </Wrapper>
       </div>
@@ -89,6 +89,8 @@ const Left = styled.div`
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  padding: 50px 0;
+
   @media (max-width: 768px) {
     display: none;
   }
